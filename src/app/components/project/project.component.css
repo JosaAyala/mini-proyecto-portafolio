@@ -1,0 +1,22 @@
+.project-container {
+  padding: 15px 15px 15px 15px;
+}
+
+.project-container .project {
+  display: grid;
+  grid-template-columns: 350px calc(100% - 350px);
+  column-gap: 10px;
+}
+
+.project-container .project .img {
+  height: 350px;
+  width: 350px;
+}
+
+.project-container .project .img img {
+  object-fit: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 35px;
+}

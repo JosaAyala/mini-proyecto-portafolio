@@ -1,0 +1,14 @@
+<div class="project-container">
+  <h3 class="">{{ projectName }}</h3>
+  <hr class="" />
+  <div class="project">
+    <div class="img">
+      <img src="{{ imageUrl }}" alt="{{ projectName }}" />
+    </div>
+    <div class="">
+      <div *ngFor="let detail of projectDetails">
+        <p class="" style="font-size: 18px;">{{ detail }}</p>
+      </div>
+    </div>
+  </div>
+</div>

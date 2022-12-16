@@ -1,0 +1,21 @@
+<app-header></app-header>
+<br class="" />
+<div class="content">
+  <div class="hero-content">
+    <app-hero></app-hero>
+  </div>
+
+  <div class="project-content">
+    <h2 class="">Estos son algunos de mis proyectos</h2>
+    <div class="list-project">
+      <div *ngFor="let prj of projects">
+        <app-project
+          [projectName]="prj.name"
+          [imageUrl]="prj.imageUrl"
+          [projectDetails]="prj.proyectDetails"
+        ></app-project>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer class="footer"></app-footer>
